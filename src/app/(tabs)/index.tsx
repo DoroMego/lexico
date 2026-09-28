@@ -206,7 +206,7 @@ export default function WordsScreen() {
           {query.length > 0 && !submittedLang && (
             <ReportInline
               query={query}
-              onSubmit={(lang) => { reportMissingWord(query, lang); setSubmittedLang(lang); }}
+              onSubmit={async (lang) => { await reportMissingWord(query, lang); setSubmittedLang(lang); }}
               accentColor={ACCENT}
               mutedColor={theme.textMuted}
             />
@@ -345,6 +345,7 @@ export default function WordsScreen() {
           </View>
         )}
 
+        {!query.trim() && <Text style={{paddingHorizontal:16,paddingVertical:8,color:theme.textMuted}}>试试 cocina · kitchen · 厨房</Text>}
         <FlatList
           data={words}
           keyExtractor={(w) => String(w.id)}
@@ -389,7 +390,7 @@ export default function WordsScreen() {
                     {(['es', 'zh', 'en'] as MissingLang[]).map((lang) => (
                       <Pressable
                         key={lang}
-                        onPress={() => { reportMissingWord(query, lang); setSubmittedLang(lang); }}
+                        onPress={async () => { await reportMissingWord(query, lang); setSubmittedLang(lang); }}
                         style={[styles.langBtn, { borderColor: ACCENT }]}>
                         <Text style={[styles.langBtnText, { color: ACCENT }]}>
                           {lang === 'es' ? '西语' : lang === 'zh' ? '中文' : 'English'}

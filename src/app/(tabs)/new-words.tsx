@@ -8,7 +8,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { collectWord, collectedWordIds, listWords } from '@/lib/db';
 import { CEFR_LEVELS, CEFRLevel, Familiarity, Word } from '@/lib/types';
-import { Fonts, Radius, Spacing } from '@/constants/theme';
+import { Fonts, Radius, Spacing, MaxContentWidth } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 const ACCENT = '#C8793A';
@@ -211,6 +211,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   safeArea: {
+    width: '100%', maxWidth: MaxContentWidth, alignSelf: 'center',
     flex: 1,
   },
 

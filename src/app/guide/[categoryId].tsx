@@ -1,3 +1,4 @@
+import { GUIDE_CATEGORIES } from '@/data/guide';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -164,3 +165,7 @@ const styles = StyleSheet.create({
     marginLeft: Spacing.two,
   },
 });
+
+export function generateStaticParams() {
+ return GUIDE_CATEGORIES.map(category => ({ categoryId: category.id }));
+}

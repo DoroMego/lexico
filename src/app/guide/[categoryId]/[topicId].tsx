@@ -1,3 +1,5 @@
+import { GUIDE_CATEGORIES } from '@/data/guide';
+import { MaxContentWidth } from '@/constants/theme';
 import { useCallback, useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -173,7 +175,7 @@ export default function GuideTopicScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
   center: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  content: { padding: Spacing.four, gap: Spacing.four, paddingBottom: Spacing.six },
+  content: { width: '100%', maxWidth: MaxContentWidth, alignSelf: 'center', padding: Spacing.four, gap: Spacing.four, paddingBottom: Spacing.six },
   header: {
     borderLeftWidth: 3,
     paddingLeft: Spacing.three,
@@ -217,3 +219,7 @@ const styles = StyleSheet.create({
   sentenceEs: { fontStyle: 'italic' },
   pressed: { opacity: 0.5 },
 });
+
+export function generateStaticParams() {
+ return GUIDE_CATEGORIES.flatMap(category => category.topics.map(topic => ({ categoryId: category.id, topicId: topic.id })));
+}

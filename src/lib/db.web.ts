@@ -181,6 +181,7 @@ async function buildWordCache(): Promise<void> {
 // ---- Query functions (words — always local) ----
 
 export async function listWords(): Promise<Word[]> {
+  await initDb();
   const db = await getIndexedDB();
   const store = db.transaction(STORE_WORDS, 'readonly').objectStore(STORE_WORDS);
 
@@ -232,6 +233,7 @@ export async function getWordBySpanish(spanish: string): Promise<Word | null> {
 }
 
 export async function getWord(id: number): Promise<Word | null> {
+  await initDb();
   const db = await getIndexedDB();
   const store = db.transaction(STORE_WORDS, 'readonly').objectStore(STORE_WORDS);
 

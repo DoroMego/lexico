@@ -8,6 +8,8 @@ const assert=require('node:assert/strict');
  page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',route=>{const u=new URL(route.request().url());if(u.protocol.startsWith('http')&&!['localhost','127.0.0.1'].includes(u.hostname)){external.push(u.origin);return route.abort();}return route.continue();});
  const origin=process.env.PILOT_ORIGIN||'http://localhost:18097';
+ await page.goto(origin+'/new-words',{waitUntil:'networkidle'});
+ await page.getByText('90 个词汇',{exact:true}).waitFor();
  await page.goto(origin,{waitUntil:'networkidle'});
  await page.getByText('cocina',{exact:true}).waitFor();
  const search=page.getByPlaceholder('buscar · 搜索 · search');
@@ -24,12 +26,13 @@ const assert=require('node:assert/strict');
  await page.getByText('比较熟',{exact:true}).click();
  await page.getByText(/复习完成/).waitFor();
  await page.reload({waitUntil:'networkidle'}); // Verify review writes survive reload before reading IndexedDB.
+ await page.getByText('今天没有要复习的了 🎉',{exact:true}).waitFor();
  const state=await page.evaluate(async()=>{
   const db=await new Promise((r,j)=>{const q=indexedDB.open('lexico-public-sample90-v1');q.onsuccess=()=>r(q.result);q.onerror=()=>j(q.error);});
   const read=name=>new Promise((r,j)=>{const q=db.transaction(name).objectStore(name).getAll();q.onsuccess=()=>r(q.result);q.onerror=()=>j(q.error);});
   return {words:await read('words'),collection:await read('collection'),reviews:await read('reviews'),databases:await indexedDB.databases()};
  });
- assert.equal(state.words.length,90);assert.equal(state.collection.length,1);assert.equal(state.reviews.length,1);assert.equal(state.collection[0].reps,1);assert.ok(state.collection[0].due_at>state.collection[0].last_reviewed_at);
+ assert.equal(state.words.length,90);assert.equal(state.collection.length,1);assert.equal(state.reviews.length,1);assert.equal(state.collection[0].reps,1);assert.equal(state.collection[0].familiarity,2);assert.equal(state.collection.filter(x=>x.due_at<=Date.now()).length,0);assert.equal(state.reviews[0].grade,2);assert.ok(state.collection[0].due_at>state.collection[0].last_reviewed_at);
  assert.deepEqual(state.databases.map(x=>x.name),['lexico-public-sample90-v1']);
  await page.goto(origin+'/profile',{waitUntil:'networkidle'});await page.getByText(/Local sample/).waitFor();assert.equal(await page.getByPlaceholder('密码').count(),0);
  await page.goto(origin,{waitUntil:'networkidle'});await search.fill('pilotmissingword');
@@ -39,6 +42,19 @@ const assert=require('node:assert/strict');
  for(const route of ['/topic/kitchen','/topic/ideas','/guide/pilot','/guide/pilot/verbs','/guide/pilot/forms','/guide/pilot/family','/new-words','/topic/learning','/topic/daily','/guide/pilot/stem-change','/guide/pilot/gender','/guide/pilot/connectors','/word/6','/word/51','/word/54','/word/56','/word/57','/word/58']){
   await page.goto(origin+route,{waitUntil:'networkidle'});assert.ok((await page.locator('body').innerText()).length>10);
  }
+ for(const [route,label] of [['/','单词'],['/guide','指南'],['/new-words','新词'],['/explore','复习'],['/profile','我的']]) {
+  await page.goto(origin+route,{waitUntil:'networkidle'});
+  for(let pass=0;pass<2;pass++){
+   assert.equal(await page.getByRole('link',{name:label,exact:true}).locator('div').first().evaluate(e=>getComputedStyle(e).color),'rgb(200, 121, 58)',route);
+   if(pass===0)await page.reload({waitUntil:'networkidle'});
+  }
+ }
+ const freshDetail=await browser.newPage();
+ freshDetail.on('pageerror',e=>errors.push(e.message));
+ await freshDetail.route('**/*',route=>{const u=new URL(route.request().url());if(u.protocol.startsWith('http')&&!['localhost','127.0.0.1'].includes(u.hostname)){external.push(u.origin);return route.abort();}return route.continue();});
+ await freshDetail.goto(origin+'/word/2',{waitUntil:'networkidle'});
+ await freshDetail.getByText('cocinero',{exact:true}).waitFor();
+ await freshDetail.close();
  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
  console.log('✓ Chrome: 90-record seed, twelve searches, collect/reload/review, local profile/reports, expanded supporting/detail routes; no page errors or external HTTP requests');
  } finally {await browser.close();}

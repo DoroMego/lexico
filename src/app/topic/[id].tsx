@@ -1,3 +1,4 @@
+import { TOPICS } from '@/data/topics';
 import { useCallback, useEffect, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
@@ -151,3 +152,7 @@ const styles = StyleSheet.create({
   collectBtn: { flexShrink: 0 },
   collectInner: { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
 });
+
+export function generateStaticParams() {
+ return TOPICS.map(topic => ({ id: topic.id }));
+}

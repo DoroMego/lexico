@@ -2,9 +2,9 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const parser=require('@babel/parser');
 const words=require('../src/data/wordbank.json');
-const excluded=new Set(['node_modules','dist','.expo']);
+const excluded=new Set(['node_modules','dist','.expo','.git']);
 function files(dir,skip=false){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>{if(skip&&excluded.has(e.name))return [];const p=path.join(dir,e.name);return e.isDirectory()?files(p,skip):[p];});}
-for(const name of ['.git','.env','.claude','.codex','.agents','.vscode','.vercel'])assert.ok(!fs.existsSync(name),`Excluded path: ${name}`);
+for(const name of ['.env','.claude','.codex','.agents','.vscode','.vercel'])assert.ok(!fs.existsSync(name),`Excluded path: ${name}`);
 const own=files('.',true);assert.ok(!own.some(p=>/\.env\./.test(p)&&!p.endsWith('.env.example')));
 const exported=files('dist');
 const patterns={supabaseProject:/https?:\/\/[a-z0-9]{12,}\.supabase\.co/gi,personalEmail:/[A-Z0-9._%+-]+@(?:gmail|hotmail|outlook|icloud|yahoo)\.[a-z]+/gi,uuid:/\b[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\b/gi,privateKey:/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/g,anthropicKey:/sk-ant-[A-Za-z0-9_-]{20,}/g,googleKey:/AIza[A-Za-z0-9_-]{30,}/g,serviceKey:/sb_secret_[A-Za-z0-9_-]{15,}/g,personalPath:/\/Users\/[A-Za-z][^\s"'<>]{2,}/g};

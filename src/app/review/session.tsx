@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Spacing } from '@/constants/theme';
+import { Spacing, MaxContentWidth } from '@/constants/theme';
 import { dueCards, recordReview } from '@/lib/db';
 import { localDay } from '@/lib/date';
 import { CollectionItem, Familiarity, Word } from '@/lib/types';
@@ -121,7 +121,7 @@ export default function ReviewSessionScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1 },
-  safeArea: { flex: 1, padding: Spacing.four, gap: Spacing.three },
+  safeArea: { width: '100%', maxWidth: MaxContentWidth, alignSelf: 'center', flex: 1, padding: Spacing.four, gap: Spacing.three },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.four, padding: Spacing.four },
   summaryText: { textAlign: 'center' },
   progress: { textAlign: 'center' },

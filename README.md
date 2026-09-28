@@ -4,16 +4,17 @@
 
 **Look up a word. Understand its forms. Make it part of your vocabulary.**
 
-Spanish learning with multilingual search, morphology-aware lookup,<br>
-conjugation, word families, and spaced review.
+A Spanish-learning application built with Expo, React Native and TypeScript.<br>
+Spanish / English / Chinese lookup, morphology-aware search, conjugation,<br>
+collections and spaced review — with **90 curated public sample entries**.
 
-[Live Demo](https://lexico-app.vercel.app/) · [Screenshots](#screenshots) · [Run Locally](#run-locally) · [Data & Provenance](docs/DATA_PROVENANCE.md)
+Live Demo: [Public sample edition](https://lexico-public.vercel.app) · [Screenshots](#screenshots) · [Run Locally](#run-locally) · [Data & Provenance](docs/DATA_PROVENANCE.md)
 
 **Spanish · English · 中文** &nbsp; | &nbsp; **Local-first public sample**
 
 </div>
 
-> **Two editions, one project.** The live app showcases the broader learning experience. This repository contains a runnable **90-entry public sample**, with a smaller guide and independently prepared content. The live app's full dataset, backend configuration and complete UI/content are not reproduced here.
+> **Public portfolio edition.** This repository and its live demo use only the separately prepared 90-entry sample and run locally without a backend. The private working version was developed around a structured corpus of approximately 7,500 Spanish vocabulary entries; that corpus is not distributed here.
 
 ## What it does
 
@@ -51,7 +52,7 @@ These are implementation goals and demonstrated capabilities, not claims of meas
 | Language | TypeScript **6.0.3** |
 | Local storage | IndexedDB on web; SQLite adapter for native |
 | Optional cloud | Supabase authentication and cloud data paths |
-| Pronunciation | Platform text-to-speech by default |
+| Pronunciation | Installed local Spanish voices on web; platform TTS on native |
 
 The code targets web, iOS and Android through Expo. **Local web behavior is validated; native-device parity and mobile release are not yet verified.**
 
@@ -124,7 +125,7 @@ The public edition passed clean installation, TypeScript checking, Expo web expo
 - Local review persistence and mocked cloud success/failure paths.
 - No-environment startup without creating a Supabase client.
 
-Headless Chrome checks also covered collection and review persistence after reload, local missing-word reports, and topic/guide/detail routes. No external HTTP requests were attempted during those local-mode flows. Live Supabase, native-device behavior and the separately hosted demo are outside that validation claim.
+Headless Chrome checks also covered collection and review persistence after reload, local missing-word reports, and topic/guide/detail routes. No external HTTP requests were attempted during those local-mode flows. The hosted public sample also passed Chrome checks for direct-route navigation, mobile layout and two-card review persistence after reload, with no page errors or unexpected external HTTP requests in the tested flows. Live Supabase and native-device behavior remain unverified.
 
 <details>
 <summary><strong>Run the checks</strong></summary>
@@ -138,11 +139,13 @@ npm run test:pilot
 npm run test:sample
 node scripts/local-mode-sanity.cjs
 npx expo export -p web
+node scripts/isolation-check.cjs
+node scripts/serve-export.cjs
 ```
 
 Browser checks use `scripts/browser-smoke.cjs` with separately installed Playwright and Chrome. Set `PLAYWRIGHT_MODULE` if Playwright is external, and `PILOT_ORIGIN` to the running local server.
 
-The release isolation script, `scripts/isolation-check.cjs`, is intended for a clean **pre-Git staging copy** with an export present: it deliberately rejects `.git`. Release-time bundle inspection verified exactly 90 vocabulary objects matching the approved sample.
+Run the browser smoke script against the local static preview to cover exported routes. The isolation script scans public source and export files while excluding Git metadata and dependencies; bundle inspection verifies exactly 90 vocabulary objects matching the approved sample.
 
 </details>
 
@@ -164,7 +167,7 @@ npm run web
 
 Copy `.env.example` to `.env` and supply your own `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_KEY`. Public environment variables must never contain private or service-role keys.
 
-You must provision and review your own schema, constraints and RLS; migrations are not included. `EXPO_PUBLIC_ADMIN_USER_ID` is a UI hint, not backend authorization. Hosted audio requires explicit `EXPO_PUBLIC_ENABLE_AUDIO=true` and independently provisioned assets with appropriate rights. Otherwise, platform TTS is used and may rely on the platform's network service.
+You must provision and review your own schema, constraints and RLS; migrations are not included. `EXPO_PUBLIC_ADMIN_USER_ID` is a UI hint, not backend authorization. Hosted audio requires explicit `EXPO_PUBLIC_ENABLE_AUDIO=true` and independently provisioned assets with appropriate rights. Default web pronunciation selects only installed local Spanish voices; if none is available, pronunciation is unavailable rather than falling back to a network voice. Native platform TTS behavior is not verified.
 
 Optional cloud features send data to your configured Supabase project. Local mode makes no Supabase requests and shows this device's reports only.
 
@@ -172,7 +175,17 @@ Optional cloud features send data to your configured Supabase project. Local mod
 
 ## Screenshots
 
-Screenshot/GIF previews are planned for multilingual search, word detail, collection/review and the guide. Until then, [explore the live app](https://lexico-app.vercel.app/). Its broader content and interface differ from this public sample edition.
+All screenshots below are captured from this repository's **90-entry public sample**, served locally from its static export.
+
+![Léxico public sample discovery](docs/images/public-discovery.png)
+
+| Multilingual lookup | Conjugation |
+|---|---|
+| ![English to Spanish search](docs/images/public-search-english.png) | ![Sample verb conjugation](docs/images/public-conjugation.png) |
+
+![Review completion after saving results](docs/images/public-review-result.png)
+
+Additional views: [word detail](docs/images/public-word-detail.png) · [sample guide](docs/images/public-guide.png).
 
 ## Limitations
 
@@ -181,7 +194,7 @@ Screenshot/GIF previews are planned for multilingual search, word detail, collec
 - Local and configured web-cloud review scheduling differ. Browser check-ins are incomplete; failed cards become due immediately but are not requeued within the same session.
 - Independent human linguistic review and broader language edge-case coverage remain future work.
 
-`npx expo export -p web` produces a static web export. Generic Vercel configuration is included but has not been validated as a deployment of this public sample; the live-demo link does not imply that this repository matches that deployment.
+`npx expo export -p web` produces a static web export. Vercel configuration serves route-specific static HTML using clean URLs. Sample word, topic and guide routes are generated at build time; no homepage catch-all rewrite is used. The export passes local preview checks and hosted verification on the public sample demo. Configure that project with no Supabase/audio environment variables for the default local-only demo.
 
 ## License / provenance
 

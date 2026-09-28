@@ -34,6 +34,18 @@ export async function setVoice(v: Voice): Promise<void> {
 
 /** Pronounce Spanish text using the current voice preference. */
 export function speakEs(text: string): void {
+  if (Platform.OS === 'web') {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    // Public web demo: never fall back to a network-backed speech voice.
+    const voice = window.speechSynthesis.getVoices().find(v => v.localService && v.lang === current)
+      ?? window.speechSynthesis.getVoices().find(v => v.localService && v.lang.startsWith('es'));
+    if (!voice) return; // Install a local Spanish voice to enable pronunciation.
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
+    window.speechSynthesis.speak(utterance);
+    return;
+  }
   Speech.speak(text, { language: current });
 }
 
