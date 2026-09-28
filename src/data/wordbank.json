@@ -1,0 +1,986 @@
+[
+  {
+    "spanish": "cocina",
+    "english": "kitchen",
+    "chinese": "厨房",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "La cocina tiene una ventana azul.",
+    "exampleZh": "厨房有一扇蓝色的窗户。",
+    "family": [
+      "cocinero",
+      "cocinar"
+    ]
+  },
+  {
+    "spanish": "cocinero",
+    "english": "cook; person who prepares food",
+    "chinese": "厨师",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A2",
+    "exampleEs": "El cocinero prepara la sopa antes de las siete.",
+    "exampleZh": "厨师在七点前准备汤。",
+    "family": [
+      "cocina",
+      "cocinar"
+    ]
+  },
+  {
+    "spanish": "decisión",
+    "english": "decision; a choice made after thinking",
+    "chinese": "决定；考虑后作出的选择",
+    "pos": "noun",
+    "gender": "f",
+    "level": "B1",
+    "exampleEs": "Esta decisión cambia nuestro horario del viernes.",
+    "exampleZh": "这个决定改变了我们周五的时间安排。"
+  },
+  {
+    "spanish": "cocinar",
+    "english": "to cook; prepare food",
+    "chinese": "做饭；烹饪",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Cocinamos arroz mientras escuchamos la radio.",
+    "exampleZh": "我们一边听广播一边煮米饭。",
+    "family": [
+      "cocina",
+      "cocinero"
+    ]
+  },
+  {
+    "spanish": "beber",
+    "english": "to drink",
+    "chinese": "喝；饮用",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Bebo agua después de ordenar la mesa.",
+    "exampleZh": "我整理桌子后喝水。"
+  },
+  {
+    "spanish": "tener",
+    "english": "to have; possess",
+    "chinese": "有；拥有",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Tenemos dos tazas junto a la ventana.",
+    "exampleZh": "我们在窗边放着两个杯子。"
+  },
+  {
+    "spanish": "pequeño",
+    "english": "small; little in size",
+    "chinese": "小的；尺寸小的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Una caja pequeña guarda mis botones.",
+    "exampleZh": "一个小盒子装着我的纽扣。"
+  },
+  {
+    "spanish": "útil",
+    "english": "useful; serving a practical purpose",
+    "chinese": "有用的；实用的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Este mapa es útil para encontrar la biblioteca.",
+    "exampleZh": "这张地图有助于找到图书馆。"
+  },
+  {
+    "spanish": "rápidamente",
+    "english": "quickly; at a fast pace",
+    "chinese": "迅速地；快速地",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "La niña encuentra rápidamente su sombrero verde.",
+    "exampleZh": "女孩很快找到了她的绿色帽子。"
+  },
+  {
+    "spanish": "aunque",
+    "english": "although; introduces a contrast",
+    "chinese": "虽然；尽管",
+    "pos": "conjunction",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Aunque hace frío, abrimos la ventana un momento.",
+    "exampleZh": "虽然天气冷，我们还是把窗户打开了一会儿。"
+  },
+  {
+    "spanish": "trabajo",
+    "english": "work; a job",
+    "chinese": "工作；职业",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A1",
+    "exampleEs": "Mi trabajo empieza a las nueve.",
+    "exampleZh": "我的工作九点开始。",
+    "family": [
+      "trabajar",
+      "trabajador"
+    ]
+  },
+  {
+    "spanish": "trabajador",
+    "english": "worker; employee",
+    "chinese": "工人；工作人员",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A2",
+    "exampleEs": "El trabajador explica cómo usar la máquina.",
+    "exampleZh": "工作人员解释如何使用这台机器。",
+    "family": [
+      "trabajar",
+      "trabajo"
+    ]
+  },
+  {
+    "spanish": "estudiante",
+    "english": "student (el/la estudiante; same spelling)",
+    "chinese": "学生（el/la estudiante，词形不变）",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A1",
+    "exampleEs": "El estudiante revisa sus notas en el autobús.",
+    "exampleZh": "这名学生在公交车上复习笔记。",
+    "family": [
+      "estudiar",
+      "estudio"
+    ]
+  },
+  {
+    "spanish": "estudio",
+    "english": "study; research project",
+    "chinese": "研究；研究项目",
+    "pos": "noun",
+    "gender": "m",
+    "level": "B1",
+    "exampleEs": "El estudio compara los horarios de tres escuelas.",
+    "exampleZh": "这项研究比较了三所学校的作息时间。",
+    "family": [
+      "estudiar",
+      "estudiante"
+    ]
+  },
+  {
+    "spanish": "viaje",
+    "english": "trip; journey",
+    "chinese": "旅行；旅程",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A1",
+    "exampleEs": "El viaje en tren dura dos horas.",
+    "exampleZh": "乘火车的旅程需要两个小时。",
+    "family": [
+      "viajar",
+      "viajero"
+    ]
+  },
+  {
+    "spanish": "viajero",
+    "english": "traveler",
+    "chinese": "旅行者；旅客",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A2",
+    "exampleEs": "El viajero deja su maleta junto a la puerta.",
+    "exampleZh": "旅客把行李箱放在门旁。",
+    "family": [
+      "viajar",
+      "viaje"
+    ]
+  },
+  {
+    "spanish": "limpieza",
+    "english": "cleaning; the act of making something clean",
+    "chinese": "清洁；打扫",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A2",
+    "exampleEs": "La limpieza de la cocina lleva veinte minutos.",
+    "exampleZh": "打扫厨房需要二十分钟。",
+    "family": [
+      "limpiar",
+      "limpio"
+    ]
+  },
+  {
+    "spanish": "aprendizaje",
+    "english": "learning; the process of gaining knowledge or skills",
+    "chinese": "学习；获取知识或技能的过程",
+    "pos": "noun",
+    "gender": "m",
+    "level": "B1",
+    "exampleEs": "La práctica diaria facilita el aprendizaje de idiomas.",
+    "exampleZh": "每天练习有助于语言学习。",
+    "family": [
+      "aprender"
+    ]
+  },
+  {
+    "spanish": "compra",
+    "english": "purchase; something bought",
+    "chinese": "购买；买到的东西",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A2",
+    "exampleEs": "Guardo el recibo de cada compra en una carpeta.",
+    "exampleZh": "我把每次购物的收据放在一个文件夹里。",
+    "family": [
+      "comprar"
+    ]
+  },
+  {
+    "spanish": "vida",
+    "english": "life",
+    "chinese": "生活；生命",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "La vida en este pueblo es tranquila.",
+    "exampleZh": "这个村庄的生活很平静。",
+    "family": [
+      "vivir",
+      "vivo"
+    ]
+  },
+  {
+    "spanish": "libro",
+    "english": "book",
+    "chinese": "书；书籍",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A1",
+    "exampleEs": "Este libro cabe en el bolsillo de mi abrigo.",
+    "exampleZh": "这本书能放进我的外套口袋。"
+  },
+  {
+    "spanish": "mesa",
+    "english": "table",
+    "chinese": "桌子",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "Ponemos una mesa cerca de la ventana.",
+    "exampleZh": "我们在窗户旁放了一张桌子。"
+  },
+  {
+    "spanish": "ventana",
+    "english": "window",
+    "chinese": "窗户",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "Cierro la ventana cuando empieza a llover.",
+    "exampleZh": "开始下雨时，我关上窗户。"
+  },
+  {
+    "spanish": "ciudad",
+    "english": "city",
+    "chinese": "城市",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "La ciudad tiene un parque junto al río.",
+    "exampleZh": "这座城市在河边有一个公园。"
+  },
+  {
+    "spanish": "canción",
+    "english": "song",
+    "chinese": "歌曲",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A2",
+    "exampleEs": "Escuchamos una canción durante el desayuno.",
+    "exampleZh": "我们吃早餐时听了一首歌。"
+  },
+  {
+    "spanish": "habitación",
+    "english": "room; bedroom",
+    "chinese": "房间；卧室",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A2",
+    "exampleEs": "La habitación tiene espacio para dos camas.",
+    "exampleZh": "这个房间有空间放两张床。"
+  },
+  {
+    "spanish": "jardín",
+    "english": "garden",
+    "chinese": "花园",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A2",
+    "exampleEs": "Regamos el jardín después de cenar.",
+    "exampleZh": "我们晚饭后给花园浇水。"
+  },
+  {
+    "spanish": "pan",
+    "english": "bread",
+    "chinese": "面包",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A1",
+    "exampleEs": "Compro pan antes de volver a casa.",
+    "exampleZh": "我回家前买面包。"
+  },
+  {
+    "spanish": "agua",
+    "english": "water",
+    "chinese": "水",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "El agua de esta botella está fría.",
+    "exampleZh": "这个瓶子里的水是凉的。"
+  },
+  {
+    "spanish": "tiempo",
+    "english": "time; available time",
+    "chinese": "时间；可支配的时间",
+    "pos": "noun",
+    "gender": "m",
+    "level": "A1",
+    "exampleEs": "Hoy tengo tiempo para caminar un poco.",
+    "exampleZh": "今天我有时间走一会儿。"
+  },
+  {
+    "spanish": "pregunta",
+    "english": "question",
+    "chinese": "问题；提问",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A1",
+    "exampleEs": "Escribo mi pregunta antes de levantar la mano.",
+    "exampleZh": "我举手前先写下自己的问题。"
+  },
+  {
+    "spanish": "respuesta",
+    "english": "answer; reply",
+    "chinese": "答案；回答",
+    "pos": "noun",
+    "gender": "f",
+    "level": "A2",
+    "exampleEs": "Tu respuesta me ayuda a comprender el problema.",
+    "exampleZh": "你的回答帮助我理解这个问题。"
+  },
+  {
+    "spanish": "reunión",
+    "english": "meeting; gathering",
+    "chinese": "会议；聚会",
+    "pos": "noun",
+    "gender": "f",
+    "level": "B1",
+    "exampleEs": "La reunión termina antes de la hora de comer.",
+    "exampleZh": "会议在午饭时间前结束。"
+  },
+  {
+    "spanish": "oportunidad",
+    "english": "opportunity; a chance to do something",
+    "chinese": "机会；做某事的时机",
+    "pos": "noun",
+    "gender": "f",
+    "level": "B1",
+    "exampleEs": "Este curso ofrece una oportunidad para practicar español.",
+    "exampleZh": "这门课提供了练习西班牙语的机会。"
+  },
+  {
+    "spanish": "solicitud",
+    "english": "application; formal request",
+    "chinese": "申请；正式请求",
+    "pos": "noun",
+    "gender": "f",
+    "level": "B1",
+    "exampleEs": "Envío la solicitud después de revisar mis datos.",
+    "exampleZh": "我核对个人信息后提交申请。"
+  },
+  {
+    "spanish": "esfuerzo",
+    "english": "effort",
+    "chinese": "努力；付出的精力",
+    "pos": "noun",
+    "gender": "m",
+    "level": "B1",
+    "exampleEs": "Aprender un idioma requiere esfuerzo y paciencia.",
+    "exampleZh": "学习一门语言需要努力和耐心。"
+  },
+  {
+    "spanish": "estudiar",
+    "english": "to study",
+    "chinese": "学习；研读",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Estudio español media hora cada tarde.",
+    "exampleZh": "我每天下午学习半小时西班牙语。",
+    "family": [
+      "estudiante",
+      "estudio"
+    ]
+  },
+  {
+    "spanish": "trabajar",
+    "english": "to work",
+    "chinese": "工作",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Trabajamos juntos en una biblioteca pequeña.",
+    "exampleZh": "我们一起在一家小图书馆工作。",
+    "family": [
+      "trabajo",
+      "trabajador"
+    ]
+  },
+  {
+    "spanish": "viajar",
+    "english": "to travel",
+    "chinese": "旅行；出行",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Prefiero viajar en tren cuando tengo tiempo.",
+    "exampleZh": "有时间时，我更喜欢乘火车旅行。",
+    "family": [
+      "viaje",
+      "viajero"
+    ]
+  },
+  {
+    "spanish": "caminar",
+    "english": "to walk",
+    "chinese": "步行；走路",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Caminamos hasta el mercado los sábados.",
+    "exampleZh": "我们周六步行去市场。"
+  },
+  {
+    "spanish": "escuchar",
+    "english": "to listen to",
+    "chinese": "听；倾听",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Escucho las instrucciones antes de empezar.",
+    "exampleZh": "我开始之前先听说明。"
+  },
+  {
+    "spanish": "comprar",
+    "english": "to buy",
+    "chinese": "买；购买",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Compramos fruta para toda la semana.",
+    "exampleZh": "我们买了一周要吃的水果。",
+    "family": [
+      "compra"
+    ]
+  },
+  {
+    "spanish": "limpiar",
+    "english": "to clean",
+    "chinese": "清洁；打扫干净",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Limpio la mesa después de cada comida.",
+    "exampleZh": "我每顿饭后都擦桌子。",
+    "family": [
+      "limpio",
+      "limpieza"
+    ]
+  },
+  {
+    "spanish": "hablar",
+    "english": "to speak; to talk",
+    "chinese": "说话；交谈",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Hablo con mi hermana mientras preparo la cena.",
+    "exampleZh": "我准备晚饭时和姐姐聊天。"
+  },
+  {
+    "spanish": "aprender",
+    "english": "to learn",
+    "chinese": "学习；学会",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Aprendemos palabras nuevas con ejemplos cortos.",
+    "exampleZh": "我们通过简短的例句学习新词。",
+    "family": [
+      "aprendizaje"
+    ]
+  },
+  {
+    "spanish": "comer",
+    "english": "to eat",
+    "chinese": "吃；吃饭",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Comemos en casa antes de salir.",
+    "exampleZh": "我们出门前在家吃饭。"
+  },
+  {
+    "spanish": "vender",
+    "english": "to sell",
+    "chinese": "卖；出售",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "La tienda vende libros de segunda mano.",
+    "exampleZh": "这家商店卖二手书。"
+  },
+  {
+    "spanish": "comprender",
+    "english": "to understand; to grasp a meaning",
+    "chinese": "理解；领会含义",
+    "pos": "verb",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Ahora comprendo por qué cambiaste de opinión.",
+    "exampleZh": "现在我理解你为什么改变了想法。"
+  },
+  {
+    "spanish": "responder",
+    "english": "to answer; to reply",
+    "chinese": "回答；回复",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Respondo a los mensajes durante el descanso.",
+    "exampleZh": "我休息时回复消息。"
+  },
+  {
+    "spanish": "correr",
+    "english": "to run",
+    "chinese": "跑；跑步",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Corremos por el parque antes del desayuno.",
+    "exampleZh": "我们早餐前在公园跑步。"
+  },
+  {
+    "spanish": "vivir",
+    "english": "to live; to reside",
+    "chinese": "生活；居住",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Vivimos cerca de una estación de tren.",
+    "exampleZh": "我们住在一个火车站附近。",
+    "family": [
+      "vida",
+      "vivo"
+    ]
+  },
+  {
+    "spanish": "recibir",
+    "english": "to receive",
+    "chinese": "收到；接收",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Recibo un mensaje cuando llega el paquete.",
+    "exampleZh": "包裹到达时，我会收到一条消息。"
+  },
+  {
+    "spanish": "compartir",
+    "english": "to share",
+    "chinese": "分享；共用",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Compartimos una mesa en la biblioteca.",
+    "exampleZh": "我们在图书馆共用一张桌子。"
+  },
+  {
+    "spanish": "ser",
+    "english": "to be; identify or describe someone or something",
+    "chinese": "是；说明身份或特征",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Mi vecino es profesor de música.",
+    "exampleZh": "我的邻居是音乐老师。"
+  },
+  {
+    "spanish": "ir",
+    "english": "to go",
+    "chinese": "去；前往",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Vamos al mercado después de desayunar.",
+    "exampleZh": "我们吃过早饭后去市场。"
+  },
+  {
+    "spanish": "hacer",
+    "english": "to do; to make",
+    "chinese": "做；制作",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Hago una lista antes de comprar comida.",
+    "exampleZh": "我买食物之前先列一张清单。"
+  },
+  {
+    "spanish": "poder",
+    "english": "can; to be able to",
+    "chinese": "能；能够",
+    "pos": "verb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Hoy puedo ayudarte después del trabajo.",
+    "exampleZh": "今天下班后我可以帮你。"
+  },
+  {
+    "spanish": "dormir",
+    "english": "to sleep",
+    "chinese": "睡觉；睡眠",
+    "pos": "verb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Duermo mejor cuando la habitación está tranquila.",
+    "exampleZh": "房间安静时，我睡得更好。"
+  },
+  {
+    "spanish": "limpio",
+    "english": "clean; free of dirt",
+    "chinese": "干净的；清洁的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Dejo los platos limpios en este armario.",
+    "exampleZh": "我把洗干净的盘子放在这个柜子里。",
+    "family": [
+      "limpiar",
+      "limpieza"
+    ]
+  },
+  {
+    "spanish": "vivo",
+    "english": "alive; living",
+    "chinese": "活着的；有生命的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "El pez sigue vivo después del viaje.",
+    "exampleZh": "旅程结束后，这条鱼仍然活着。",
+    "family": [
+      "vivir",
+      "vida"
+    ]
+  },
+  {
+    "spanish": "grande",
+    "english": "large; big in size",
+    "chinese": "大的；尺寸大的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Necesitamos una mesa grande para seis personas.",
+    "exampleZh": "我们需要一张能坐六个人的大桌子。"
+  },
+  {
+    "spanish": "fácil",
+    "english": "easy; not difficult",
+    "chinese": "容易的；不难的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Esta receta es fácil y no necesita horno.",
+    "exampleZh": "这个食谱很容易做，而且不需要烤箱。"
+  },
+  {
+    "spanish": "difícil",
+    "english": "difficult; requiring effort",
+    "chinese": "困难的；需要费力的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "La última pregunta del ejercicio es difícil.",
+    "exampleZh": "练习的最后一道题很难。"
+  },
+  {
+    "spanish": "nuevo",
+    "english": "new; recently obtained or made",
+    "chinese": "新的；新获得或新做的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Uso un cuaderno nuevo para las clases de español.",
+    "exampleZh": "我用一本新笔记本上西班牙语课。"
+  },
+  {
+    "spanish": "tranquilo",
+    "english": "calm; quiet",
+    "chinese": "平静的；安静的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Buscamos un lugar tranquilo para hablar.",
+    "exampleZh": "我们找一个安静的地方说话。"
+  },
+  {
+    "spanish": "amable",
+    "english": "kind; friendly in manner",
+    "chinese": "亲切的；友善的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "La profesora es amable con los estudiantes nuevos.",
+    "exampleZh": "老师对新学生很亲切。"
+  },
+  {
+    "spanish": "responsable",
+    "english": "responsible; reliable in fulfilling duties",
+    "chinese": "负责任的；可靠的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Es una compañera responsable y cumple sus promesas.",
+    "exampleZh": "她是一位负责任的同事，会遵守承诺。"
+  },
+  {
+    "spanish": "disponible",
+    "english": "available; ready to be used",
+    "chinese": "可用的；可供使用的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Hay una habitación disponible para esta noche.",
+    "exampleZh": "今晚有一个空房间。"
+  },
+  {
+    "spanish": "necesario",
+    "english": "necessary; needed",
+    "chinese": "必要的；需要的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Es necesario revisar la dirección antes de salir.",
+    "exampleZh": "出门前有必要核对地址。"
+  },
+  {
+    "spanish": "cotidiano",
+    "english": "everyday; part of daily life",
+    "chinese": "日常的；每天生活中的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "La guía explica palabras de uso cotidiano.",
+    "exampleZh": "这份指南解释日常使用的词语。"
+  },
+  {
+    "spanish": "independiente",
+    "english": "independent; able to act without relying on others",
+    "chinese": "独立的；不依赖他人的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Mi abuelo es independiente y hace sus propias compras.",
+    "exampleZh": "我爷爷生活独立，自己买东西。"
+  },
+  {
+    "spanish": "compartido",
+    "english": "shared; used by more than one person",
+    "chinese": "共用的；共享的",
+    "pos": "adjective",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Guardamos los documentos en una carpeta compartida.",
+    "exampleZh": "我们把文件保存在一个共享文件夹里。"
+  },
+  {
+    "spanish": "hoy",
+    "english": "today",
+    "chinese": "今天",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Hoy preparo la cena con mi hermano.",
+    "exampleZh": "今天我和弟弟一起准备晚饭。"
+  },
+  {
+    "spanish": "mañana",
+    "english": "tomorrow",
+    "chinese": "明天",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Mañana visitamos a una amiga en otra ciudad.",
+    "exampleZh": "明天我们去另一座城市看望一位朋友。"
+  },
+  {
+    "spanish": "aquí",
+    "english": "here; in this place",
+    "chinese": "这里；在这个地方",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Puedes dejar tu mochila aquí.",
+    "exampleZh": "你可以把背包放在这里。"
+  },
+  {
+    "spanish": "siempre",
+    "english": "always; every time",
+    "chinese": "总是；每次都",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Siempre llevo agua cuando salgo a caminar.",
+    "exampleZh": "我出门散步时总会带水。"
+  },
+  {
+    "spanish": "nunca",
+    "english": "never; not at any time",
+    "chinese": "从不；任何时候都不",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "Nunca dejo las llaves dentro del coche.",
+    "exampleZh": "我从不把钥匙留在车里。"
+  },
+  {
+    "spanish": "despacio",
+    "english": "slowly; at a gentle pace",
+    "chinese": "慢慢地；缓慢地",
+    "pos": "adverb",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Habla despacio para que pueda entenderte.",
+    "exampleZh": "请说慢一点，好让我听懂。"
+  },
+  {
+    "spanish": "probablemente",
+    "english": "probably; quite likely",
+    "chinese": "很可能；大概",
+    "pos": "adverb",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Probablemente terminemos el trabajo esta tarde.",
+    "exampleZh": "我们很可能今天下午完成工作。"
+  },
+  {
+    "spanish": "alguien",
+    "english": "someone; an unspecified person",
+    "chinese": "某人；有人",
+    "pos": "pronoun",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Alguien ha dejado un paraguas en la entrada.",
+    "exampleZh": "有人把一把伞留在了入口处。"
+  },
+  {
+    "spanish": "nadie",
+    "english": "nobody; no person",
+    "chinese": "没有人；谁也不",
+    "pos": "pronoun",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Nadie respondió a mi primera pregunta.",
+    "exampleZh": "没有人回答我的第一个问题。"
+  },
+  {
+    "spanish": "cualquiera",
+    "english": "anyone; any person without restriction",
+    "chinese": "任何人；不论是谁",
+    "pos": "pronoun",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Cualquiera puede participar en esta actividad.",
+    "exampleZh": "任何人都可以参加这项活动。"
+  },
+  {
+    "spanish": "la",
+    "english": "the; feminine singular definite article",
+    "chinese": "阴性单数定冠词；表示特指",
+    "pos": "article",
+    "gender": null,
+    "level": "A1",
+    "exampleEs": "La mesa está junto a la puerta.",
+    "exampleZh": "那张桌子在门旁。"
+  },
+  {
+    "spanish": "hacia",
+    "english": "toward; in the direction of",
+    "chinese": "朝；向着",
+    "pos": "preposition",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Caminamos hacia la estación sin prisa.",
+    "exampleZh": "我们不慌不忙地朝车站走去。"
+  },
+  {
+    "spanish": "durante",
+    "english": "during; throughout a period",
+    "chinese": "在……期间",
+    "pos": "preposition",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Durante la reunión dejamos los teléfonos en silencio.",
+    "exampleZh": "开会期间，我们把手机设为静音。"
+  },
+  {
+    "spanish": "mediante",
+    "english": "by means of; using a method",
+    "chinese": "通过；借助某种方式",
+    "pos": "preposition",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Puedes enviar la solicitud mediante este formulario.",
+    "exampleZh": "你可以通过这张表格提交申请。"
+  },
+  {
+    "spanish": "mientras",
+    "english": "while; during the time that",
+    "chinese": "当……的时候；在……期间",
+    "pos": "conjunction",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "Yo limpio la mesa mientras tú preparas el café.",
+    "exampleZh": "你准备咖啡的时候，我来擦桌子。"
+  },
+  {
+    "spanish": "para que",
+    "english": "so that; introduces a purpose",
+    "chinese": "为了让；以便",
+    "pos": "conjunction",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "Te dejo mi libro para que puedas estudiar.",
+    "exampleZh": "我把书留给你，好让你能学习。"
+  },
+  {
+    "spanish": "sin embargo",
+    "english": "however; introduces a contrasting point",
+    "chinese": "然而；不过",
+    "pos": "phrase",
+    "gender": null,
+    "level": "B1",
+    "exampleEs": "La habitación es pequeña; sin embargo, tiene mucha luz.",
+    "exampleZh": "房间很小，不过光线很充足。"
+  },
+  {
+    "spanish": "de acuerdo",
+    "english": "agreed; expresses acceptance",
+    "chinese": "好的；同意",
+    "pos": "phrase",
+    "gender": null,
+    "level": "A2",
+    "exampleEs": "De acuerdo, nos vemos mañana a las diez.",
+    "exampleZh": "好的，我们明天十点见。"
+  }
+]

@@ -1,0 +1,9 @@
+# Public sample editorial review
+
+All 90 entries received an assistant review for sense alignment, Spanish examples, Chinese translations, POS/gender and editorial CEFR assignments. The user approved the final corrections. This is not independent human linguistic certification.
+
+Final decisions: estudiante has an explicit el/la clarification while its stored m marks the example gender; agua remains feminine and the guide explains el before stressed /a/; estudio keeps the research sense; mañana remains an adverb; compartido remains adjectival; cualquiera/cualquier and probablemente mood variation are explained in the guide; purpose para que uses subjunctive. Alguien’s translation uses 留在 rather than implying accidental loss. No entries were removed and no original pilot wording changed.
+
+Feminine noun variants are limited to cocinero/cocinera, trabajador/trabajadora and viajero/viajera; estudiante is common-gender. Eight families, four topics and six guide cards resolve to the sample. CEFR labels apply to selected senses, not all grammar in example sentences. The sample is illustrative rather than an exhaustive dictionary or grammar.
+
+References for independent grammatical checks: [agua](https://www.rae.es/dpd/agua), [estudiante](https://www.rae.es/dpd/estudiante), [cualquiera](https://www.rae.es/dpd/cualquiera), [mañana](https://dle.rae.es/mañana), [purpose clauses](https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/niveles/02_gramatica_inventario_b1-b2.htm), [probability and mood](https://cvc.cervantes.es/lengua/eaesla/pdf/02/26.pdf). Selected conjugation forms: [tener](https://dle.rae.es/tener), [ser](https://dle.rae.es/ser), [ir](https://dle.rae.es/ir), [hacer](https://dle.rae.es/hacer), [poder](https://dle.rae.es/poder), [dormir](https://dle.rae.es/dormir). References check facts; no source definitions/examples were reproduced.

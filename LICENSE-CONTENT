@@ -1,0 +1,11 @@
+Léxico public sample content — CC BY 4.0
+
+Original expressive sample definitions, examples, translations and curated sample organization are offered under Creative Commons Attribution 4.0 International, to the extent applicable rights are held by the licensors.
+
+Scope: src/data/wordbank.json; original prose and curated organization in src/data/topics.ts and src/data/guide.ts. Code remains MIT under LICENSE; existing third-party notices remain applicable. No exclusive ownership is claimed over ordinary Spanish words, grammatical facts, public-domain material or other uncopyrightable language facts. This notice does not license third-party rights or assert that all AI-assisted material is copyrightable.
+
+For attribution, identify “Léxico public sample”, retain this notice, link to the source when available, link to the license and indicate changes. No personal attribution identifier is required by this notice.
+
+License: https://creativecommons.org/licenses/by/4.0/
+Full legal terms: https://creativecommons.org/licenses/by/4.0/legalcode
+No endorsement or warranty is provided. See docs/DATA_PROVENANCE.md for preparation and review scope.

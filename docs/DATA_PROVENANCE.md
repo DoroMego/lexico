@@ -1,0 +1,11 @@
+# Public sample provenance and content license
+
+The 90-entry Léxico public sample was independently prepared for this portfolio edition. Its definitions, examples and translations were drafted specifically for this edition with AI assistance and editorial review. CEFR labels are illustrative editorial classifications, not official certification. The larger private development corpus is not distributed because its provenance and licensing review remains incomplete. No exclusive ownership is claimed over ordinary Spanish words or language facts.
+
+CEFR labels apply to the selected sense/headword; examples are illustrative and are not guaranteed to be fully level-controlled. The original ten approved entries remain unchanged. The additional 80 entries were prepared in batches of 30/30/20; batch snapshots and final hashes are recorded in SAMPLE_PROVENANCE.json. Final editorial changes were approved by the user. Assistant reference checking is not independent human linguistic certification.
+
+Original expressive definitions, examples, translations and curated sample organization are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) to the extent applicable rights are held; see [LICENSE-CONTENT](../LICENSE-CONTENT) for scope and attribution. Code remains MIT with the existing Expo notice preserved in [LICENSE](../LICENSE). Ordinary words, grammatical facts and other uncopyrightable language facts are not claimed as proprietary. No third-party rights are granted by this content notice.
+
+The sample was drafted separately with AI assistance. Claude API preparation scripts in the development workflow demonstrated tooling; they did not generate these approved 90 entries and are excluded from this distribution because their direct-write/large-corpus assumptions are unsuitable here. No LLM is called during normal use. No production dataset, recordings or private configuration is distributed. Pronunciation defaults to platform TTS, which follows platform settings and may use a platform network service.
+
+Selected irregular forms were independently checked against RAE references listed in CONTENT_REVIEW.md; dictionary definitions and example prose were not copied from those references. These linguistic facts are not claimed as owned content.

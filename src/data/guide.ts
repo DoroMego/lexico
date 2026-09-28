@@ -1,0 +1,12 @@
+export interface GuideTopic { id: string; title: string; summary: string; content: string; exampleWords?: string[]; exampleSentences?: {es: string; zh: string}[] }
+export interface GuideCategory { id: string; titleZh: string; titleEs: string; summary: string; accent: string; topics: GuideTopic[] }
+export const GUIDE_CATEGORIES: GuideCategory[] = [{ id: 'pilot', titleZh: '入门示例', titleEs: 'Guía de muestra', summary: 'Six sample grammar cards.', accent: '#C8793A', topics: [
+ { id: 'verbs', title: '规则与不规则动词', summary: 'Regular and irregular forms', content: 'cocinar 和 beber 按规则变化：yo cocino，yo bebo。tener 的现在时包含不规则形式：yo tengo，tú tienes。', exampleWords: ['cocinar','beber','tener'], exampleSentences: [{es: 'Tenemos dos tazas junto a la ventana.',zh: '我们在窗边放着两个杯子。'}] },
+ { id: 'forms', title: '性别与复数', summary: 'Gender and number', content: 'cocinero → cocinera → cocineras。pequeño → pequeña → pequeñas。útil 不随性别变化，复数是 útiles。compartido 作形容词时配合名词变化：carpeta compartida；与 haber 构成复合时态时分词不变：hemos compartido。', exampleWords: ['cocinero','pequeño','útil'] },
+ { id: 'family', title: '相关词', summary: 'A small word family', content: 'cocina 表示厨房，cocinero 表示厨师，cocinar 表示做饭。比较词性可以帮助区分这些相关词。', exampleWords: ['cocina','cocinero','cocinar'] },
+ {id:'stem-change',title:'词干变化与特殊形式',summary:'Selected irregular forms',content:'poder 的现在时：puedo / podemos。dormir 的现在时：duermo / dormimos，副动词是 durmiendo。hacer 的第一人称单数是 hago。',exampleWords:['poder','dormir','hacer','tener'],exampleSentences:[{es:'Hoy puedo trabajar desde casa.',zh:'今天我可以在家工作。'}]},
+ {id:'gender',title:'名词性别与重音',summary:'Gender is not always the final letter',content:'agua 是阴性名词；单数且冠词紧接重读的词首 /a/ 时用 el：el agua fría。但仍说 esta agua、la fría agua、las aguas。estudiante 可指男性或女性，词形不变：el estudiante / la estudiante。本词条用阳性作为示例。canción 的复数是 canciones，jardín 的复数是 jardines。',exampleWords:['agua','estudiante','canción','jardín','la']},
+ {id:'connectors',title:'连接时间与目的',summary:'While, purpose and contrast',content:'mientras 引出同时发生的动作。表示目的的 para que 从句使用虚拟式。sin embargo 表示转折。cualquier 放在单数名词前，独立使用的代词是 cualquiera。probablemente 可搭配直陈式或虚拟式，取决于说话者的立场和语境，并非固定概率阈值。这里展示的是少量用法，不是完整语法课程。',exampleWords:['mientras','para que','sin embargo','aunque'],exampleSentences:[{es:'Te llamo para que sepas la hora de la reunión.',zh:'我给你打电话，让你知道开会的时间。'}]}
+]}];
+export function getCategoryById(id: string) { return GUIDE_CATEGORIES.find(c => c.id === id); }
+export function getTopicById(categoryId: string, topicId: string) { return getCategoryById(categoryId)?.topics.find(t => t.id === topicId); }

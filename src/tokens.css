@@ -1,0 +1,86 @@
+/* Editorial Warm — Léxico design tokens */
+
+:root {
+  /* ── Color ─────────────────────────────── */
+  --color-ink:        #1A1A1A;   /* primary text, emphasis */
+  --color-ink-mid:    #4A4540;   /* secondary text */
+  --color-ink-muted:  #8A8078;   /* tertiary / captions */
+
+  --color-accent:     #C8793A;   /* burnt orange — single accent, use sparingly */
+  --color-accent-dim: #E5B98A;   /* tinted accent for backgrounds / tags */
+
+  --color-bg:         #FAF8F4;   /* page background */
+  --color-surface:    #F0EDE8;   /* card / elevated surface */
+  --color-surface-2:  #E8E3DC;   /* pressed / selected state */
+  --color-border:     #D8D2C8;   /* dividers, outlines */
+  --color-border-strong: #B8B0A4; /* stronger rule lines */
+
+  --color-white:      #FFFFFF;
+  --color-error:      #C0392B;
+  --color-success:    #2E7D5A;
+
+  /* ── Typography ─────────────────────────── */
+  /*   Spanish headwords → serif bold         */
+  /*   Chinese body      → system default     */
+  /*   English secondary → sans light (300)   */
+  --font-serif:   Georgia, 'Times New Roman', 'Noto Serif', serif;
+  --font-sans:    'Spline Sans', Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --font-weight-headword: 700;   /* Spanish word in serif bold */
+  --font-weight-body:     400;
+  --font-weight-light:    300;   /* English sub-labels */
+
+  --font-size-xs:   11px;
+  --font-size-sm:   13px;
+  --font-size-base: 15px;
+  --font-size-md:   17px;
+  --font-size-lg:   20px;
+  --font-size-xl:   24px;
+  --font-size-2xl:  30px;
+  --font-size-3xl:  38px;
+
+  --line-height-tight:  1.2;
+  --line-height-base:   1.5;
+  --line-height-loose:  1.75;
+
+  /* ── Spacing (4px base grid) ────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Radius — intentionally tight ──────── */
+  --radius-xs:  2px;
+  --radius-sm:  4px;   /* default chip / tag */
+  --radius-md:  6px;   /* default card */
+  --radius-lg:  8px;   /* modal, bottom sheet */
+  --radius-full: 9999px; /* pill — use only for progress bars */
+
+  /* ── Elevation / shadow ─────────────────── */
+  --shadow-card: 0 1px 3px rgba(26, 22, 18, 0.08),
+                 0 1px 2px rgba(26, 22, 18, 0.05);
+  --shadow-lifted: 0 4px 12px rgba(26, 22, 18, 0.10),
+                   0 2px 4px  rgba(26, 22, 18, 0.06);
+
+  /* ── Navigation ─────────────────────────── */
+  --nav-height:        56px;
+  --nav-border-color:  var(--color-border);
+  --nav-border-width:  1px;      /* bottom rule only, no capsule */
+  --nav-bg:            var(--color-bg);
+  --nav-active-color:  var(--color-ink);
+  --nav-inactive-color: var(--color-ink-muted);
+
+  /* ── Motion ─────────────────────────────── */
+  --duration-fast:   100ms;
+  --duration-base:   200ms;
+  --duration-slow:   350ms;
+  --ease-default:    cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring:     cubic-bezier(0.34, 1.56, 0.64, 1);
+}
